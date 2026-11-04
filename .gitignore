@@ -1,0 +1,8 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/testmoez/bin/Debug/net10.0
+/testmoez/obj
+/testmoez/.vs/testmoez.slnx

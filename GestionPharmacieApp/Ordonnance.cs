@@ -10,12 +10,13 @@ public class Ordonnance
     private readonly List<LigneOrdonnance> _lignes = new();
 
     public int Id { get; private set; }
+    public string NumeroOrdonnance { get; set; } = string.Empty;
     public DateTime DateEmission { get; private set; }
     public Medecin Medecin { get; private set; }
     public Client Client { get; private set; }
 
     public IReadOnlyList<LigneOrdonnance> Lignes => _lignes;
-
+    public Ordonnance() { }
     public Ordonnance(int id, DateTime dateEmission, Medecin medecin, Client client)
     {
         ArgumentNullException.ThrowIfNull(medecin);

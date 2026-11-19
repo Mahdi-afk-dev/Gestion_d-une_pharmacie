@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 namespace GestionPharmacie;
 
 // Fiche produit du catalogue. Ne contient PAS la quantité (rôle du Stock).
@@ -5,7 +6,7 @@ public class Medicament : IEquatable<Medicament>
 {
     private decimal _prixUnitaire;
     private int _seuilAlerte;
-
+    [Key]
     public string Code { get; set; }
     public string Nom { get; set; }
     public string Categorie { get; set; }
@@ -34,7 +35,7 @@ public class Medicament : IEquatable<Medicament>
             _seuilAlerte = value;
         }
     }
-
+    public Medicament() { }
     public Medicament(string code, string nom, string categorie, decimal prixUnitaire,
                       bool surOrdonnance, int seuilAlerte, Fournisseur? fournisseur = null)
     {

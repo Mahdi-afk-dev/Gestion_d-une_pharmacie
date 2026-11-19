@@ -10,9 +10,11 @@ public class Pharmacien : Personne
     private readonly string _login;
     private readonly string _motDePasse;
 
-    public string NumeroOrdre { get; private set; }
-    public string Role { get; private set; }
+    public string NumeroOrdre { get; set; }
+    public string Role { get; set; }
+    public string HorairesTravail { get; set; } = string.Empty;
 
+    public Pharmacien() { }
     public Pharmacien(int id, string nom, string prenom, string telephone,
                       string numeroOrdre, string role, string login, string motDePasse)
         : base(id, nom, prenom, telephone)

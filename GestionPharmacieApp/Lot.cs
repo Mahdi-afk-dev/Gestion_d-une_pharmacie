@@ -1,10 +1,11 @@
+using System.ComponentModel.DataAnnotations;
 namespace GestionPharmacie;
 
 // Une livraison d'un médicament, avec sa date de péremption.
 public class Lot
 {
     private int _quantite;
-
+    [Key]
     public string NumeroLot { get; set; }
     public DateTime DateExpiration { get; set; }
 
@@ -19,7 +20,7 @@ public class Lot
             _quantite = value;
         }
     }
-
+    public Lot() { }
     public Lot(string numeroLot, DateTime dateExpiration, int quantite)
     {
         if (string.IsNullOrWhiteSpace(numeroLot))

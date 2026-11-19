@@ -17,7 +17,7 @@ public class Vente
     public Ordonnance? Ordonnance { get; private set; }  // "basée sur" (0..1)
 
     public IReadOnlyList<LigneVente> Lignes => _lignes;
-
+    public Vente() { }
     public Vente(int id, Pharmacien pharmacien, string modePaiement,
                  Client? client = null, Ordonnance? ordonnance = null)
     {

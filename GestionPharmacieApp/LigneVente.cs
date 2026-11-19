@@ -3,10 +3,11 @@ namespace GestionPharmacie;
 // Une ligne d'une vente : un médicament, une quantité et le prix unitaire figé au moment de la vente.
 public class LigneVente
 {
+    public int Id { get; set; }
     public int Quantite { get; private set; }
     public decimal PrixUnitaire { get; private set; }
     public Medicament Medicament { get; private set; }
-
+    public LigneVente() { }
     public LigneVente(Medicament medicament, int quantite)
     {
         ArgumentNullException.ThrowIfNull(medicament);

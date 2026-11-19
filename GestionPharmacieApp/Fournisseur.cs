@@ -10,7 +10,7 @@ public class Fournisseur
     // Un fournisseur fournit plusieurs médicaments (1 -> *).
     private readonly List<Medicament> _medicaments = new();
     public IReadOnlyList<Medicament> Medicaments => _medicaments;
-
+    public Fournisseur() { }
     public Fournisseur(int id, string nom, string telephone, string adresse)
     {
         Id = id;

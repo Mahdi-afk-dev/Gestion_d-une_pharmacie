@@ -28,3 +28,9 @@
 /ajout de class/Properties/launchSettings.json
 /ajout de class/ajout de class.csproj
 /ajout de class/ajout de class.csproj.user
+.vs/
+bin/
+obj/
+*.user
+*.suo
+!pharmacie.db

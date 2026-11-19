@@ -1,0 +1,30 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/testmoez/obj
+/testmoez/bin/Debug/net10.0
+/ConsoleApp1/obj
+/testmoez/.vs
+/ConsoleApp1/ConsoleApp1.csproj
+/ConsoleApp1/ConsoleApp1.slnx
+/.vs
+/classes (g.de pharmacie)/.vs
+/classes (g.de pharmacie)/obj
+/ConsoleApp1/.vs
+/ConsoleApp1
+/classes (g.de pharmacie)/bin/Debug/net10.0
+/class/.vs/class.slnx
+/class
+/ajout class/.vs/ajout class.slnx/v18
+/ajout class
+/class gestion de pharmacie/.vs/class gestion de pharmacie.slnx/v18
+/class gestion de pharmacie/obj
+/class gestion de pharmacie/Program.cs
+/ajout de class/obj
+/ajout de class/.vs/ajout de class.slnx/v18
+/ajout de class/.vs
+/obj3
+/ajout de class/Properties/launchSettings.json
+/ajout de class/ajout de class.csproj
+/ajout de class/ajout de class.csproj.user
